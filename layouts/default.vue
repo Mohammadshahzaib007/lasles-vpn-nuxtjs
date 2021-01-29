@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <navigation />
     <v-main>
       <v-container>
         <nuxt />
@@ -9,30 +10,12 @@
 </template>
 
 <script>
+import Navigation from '../components/HomePage/Navigation.vue'
+
 export default {
-  data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: "mdi-apps",
-          title: "Welcome",
-          to: "/",
-        },
-        {
-          icon: "mdi-chart-bubble",
-          title: "Inspire",
-          to: "/inspire",
-        },
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: "Vuetify.js",
-    };
-  },
+  components: {
+    Navigation,
+  }
 };
 </script>
 
