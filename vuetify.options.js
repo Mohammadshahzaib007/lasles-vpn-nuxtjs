@@ -3,6 +3,7 @@ import UserIcon from "~/components/icons/UserIcon.vue";
 import GroupIcon from "~/components/icons/GroupIcon.vue";
 import LocationIcon from "~/components/icons/LocationIcon.vue";
 import RightIcon from "~/components/icons/RightIcon.vue";
+import RightIcon2 from "~/components/icons/RightIcon-2.vue";
 import Logo from "~/components/icons/Logo.vue";
 
 export default {
@@ -35,6 +36,9 @@ export default {
       },
       right: {
         component: RightIcon
+      },
+      right2: {
+        component: RightIcon2
       }
     }
   }

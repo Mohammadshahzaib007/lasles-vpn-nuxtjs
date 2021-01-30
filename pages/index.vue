@@ -124,7 +124,7 @@
     </section>
 
     <!-- Section fourth -->
-    <section>
+    <section style="margin-bottom: 9.375rem">
       <v-row>
         <v-col
           cols="12"
@@ -145,12 +145,50 @@
           </p>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col cols="4" :key="i" v-for="(plan, i) in plans">
+          <PriceCard
+            :planList="plan.planList"
+            :planType="plan.planType"
+            :price="plan.price"
+          />
+        </v-col>
+      </v-row>
+    </section>
+
+    <!-- Section fifth -->
+    <section style="margin-bottom: 1.8344rem">
+      <v-row>
+        <v-col
+          cols="12"
+          class="d-flex justify-center align-center flex-column text-center"
+        >
+          <h2
+            class="text-center"
+            style="font-size: 2.1875rem; font-weight: 500; color: #0B132A; max-width: 23.9631rem"
+          >
+            Huge Global Network of Fast VPN
+          </h2>
+          <p
+            class="mt-5"
+            style="font-weight: 400; color: #4F5665; max-width: 34.6875rem; margin-bottom: 9.7381rem"
+          >
+            See LaslesVPN everywhere to make it easier for you when you move
+            locations.
+          </p>
+        </v-col>
+      </v-row>
     </section>
   </v-container>
 </template>
 
 <script>
+import PriceCard from "../components/partials/PriceCard.vue";
+
 export default {
+  components: {
+    PriceCard
+  },
   data() {
     return {
       iconsAndName: [
@@ -175,6 +213,41 @@ export default {
         "Internet without borders.",
         "Supercharged VPN",
         "No specific time limits."
+      ],
+      plans: [
+        {
+          planType: "Free",
+          price: "Free",
+          planList: [
+            "Unlimited Bandwitch",
+            "IEncrypted Connection.",
+            "No Traffic Logs",
+            "Works on All Devices"
+          ]
+        },
+        {
+          planType: "Standard Plan",
+          price: "$9",
+          planList: [
+            "Unlimited Bandwitch",
+            "Encrypted Connection",
+            "Yes Traffic Logs",
+            "Works on All Devices",
+            "Connect Anyware"
+          ]
+        },
+        {
+          planType: "Premium Plan",
+          price: "$12",
+          planList: [
+            "Unlimited Bandwitch",
+            "Encrypted Connection",
+            "Yes Traffic Logs",
+            "Works on All Devices",
+            "Connect Anyware",
+            "Get New Features"
+          ]
+        }
       ]
     };
   }

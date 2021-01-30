@@ -49,8 +49,8 @@
 export default {
   data() {
     return {
-      navigationNames: ["About", "Features", "Pricing", "Testimonials", "Help"],
+      navigationNames: ["About", "Features", "Pricing", "Testimonials", "Help"]
     };
-  },
+  }
 };
 </script>
