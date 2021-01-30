@@ -2,6 +2,7 @@ import colors from "vuetify/es5/util/colors";
 import UserIcon from "~/components/icons/UserIcon.vue";
 import GroupIcon from "~/components/icons/GroupIcon.vue";
 import LocationIcon from "~/components/icons/LocationIcon.vue";
+import RightIcon from "~/components/icons/RightIcon.vue";
 import Logo from "~/components/icons/Logo.vue";
 
 export default {
@@ -31,6 +32,9 @@ export default {
       },
       logo: {
         component: Logo
+      },
+      right: {
+        component: RightIcon
       }
     }
   }
