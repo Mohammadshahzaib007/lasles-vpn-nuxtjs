@@ -19,7 +19,7 @@
         {{ planType }}
       </p>
       <v-list dense class="px-0 py-0 mx-0 my-0">
-        <v-list-item v-for="(item, i) in planList" class="pl-0">
+        <v-list-item v-for="(item, i) in planList" :key="i"="pl-0">
           <v-list-item-icon class="mr-5 mt-3" style="font-size: 0.875rem">
             <v-icon color="#2FAB73">$right2</v-icon>
           </v-list-item-icon>

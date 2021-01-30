@@ -5,6 +5,7 @@ import LocationIcon from "~/components/icons/LocationIcon.vue";
 import RightIcon from "~/components/icons/RightIcon.vue";
 import RightIcon2 from "~/components/icons/RightIcon-2.vue";
 import Logo from "~/components/icons/Logo.vue";
+import Facebook from "~/components/icons/Facebook.vue";
 
 export default {
   theme: {
@@ -39,6 +40,9 @@ export default {
       },
       right2: {
         component: RightIcon2
+      },
+      fb: {
+        component: Facebook
       }
     }
   }

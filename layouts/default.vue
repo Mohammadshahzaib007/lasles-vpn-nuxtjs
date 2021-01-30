@@ -6,15 +6,18 @@
         <nuxt />
       </v-container>
     </v-main>
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import Navigation from '../components/HomePage/Navigation.vue'
+import Navigation from "../components/HomePage/Navigation.vue";
+import Footer from "../components/HomePage/Footer.vue";
 
 export default {
   components: {
     Navigation,
+    Footer,
   }
 };
 </script>

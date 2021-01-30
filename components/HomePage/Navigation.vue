@@ -1,7 +1,7 @@
 <template>
   <v-app-bar color="white" flat app>
     <v-container>
-      <v-row class="mt-10">
+      <v-row>
         <v-col cols="2">
           <v-img
             :src="require('@/assets/images/logo.png')"

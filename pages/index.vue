@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <!-- Section first -->
+    <!-- Section 1st -->
     <section
       style="
         margin-top: 5.5619rem;
@@ -51,7 +51,7 @@
       </v-row>
     </section>
 
-    <!--Section second  -->
+    <!--Section 2nd  -->
     <section style="margin-bottom: 5.9894rem">
       <v-card
         height="12.5rem"
@@ -83,7 +83,7 @@
       </v-card>
     </section>
 
-    <!-- Section third -->
+    <!-- Section 3rd -->
     <section>
       <v-row justify="center" align="center" style="margin-bottom: 8.1994rem">
         <v-col cols="6">
@@ -123,7 +123,7 @@
       </v-row>
     </section>
 
-    <!-- Section fourth -->
+    <!-- Section 4th -->
     <section style="margin-bottom: 9.375rem">
       <v-row>
         <v-col
@@ -156,7 +156,7 @@
       </v-row>
     </section>
 
-    <!-- Section fifth -->
+    <!-- Section 5th -->
     <section style="margin-bottom: 1.8344rem">
       <v-row>
         <v-col
@@ -178,6 +178,147 @@
           </p>
         </v-col>
       </v-row>
+    </section>
+
+    <!-- Section 6th -->
+    <section style="margin-bottom: 3.125rem; max-height: 208.32px">
+      <v-row>
+        <v-col class="d-flex align-center"
+          ><v-img
+            contain
+            height="112.5px"
+            width="200px"
+            :src="require('@/assets/images/logo1.png')"
+        /></v-col>
+        <v-col class="d-flex align-center"
+          ><v-img
+            contain
+            height="50.62px"
+            width="156.25px"
+            :src="require('@/assets/images/logo5.png')"
+        /></v-col>
+        <v-col class="d-flex align-center"
+          ><v-img
+            contain
+            height="208.32"
+            width="277.76px"
+            :src="require('@/assets/images/logo4.png')"
+        /></v-col>
+        <v-col class="d-flex align-center"
+          ><v-img
+            contain
+            height="187.02px"
+            width="187.02px"
+            :src="require('@/assets/images/logo3.png')"
+        /></v-col>
+        <v-col class="d-flex align-center"
+          ><v-img
+            contain
+            height="51.34px"
+            width="171.28px"
+            :src="require('@/assets/images/logo2.png')"
+        /></v-col>
+      </v-row>
+    </section>
+
+    <!-- Section 7th -->
+    <section style="margin-bottom: 4.0637rem">
+      <v-row>
+        <v-col
+          cols="12"
+          class="d-flex justify-center align-center flex-column text-center"
+        >
+          <h2
+            class="text-center"
+            style="font-size: 2.1875rem; font-weight: 500; color: #0B132A; max-width: 27.9881rem"
+          >
+            Trusted by Thousands of Happy Customer
+          </h2>
+          <p
+            class="mt-5"
+            style="font-weight: 400; color: #4F5665; max-width: 34.6875rem; margin-bottom: 9.7381rem"
+          >
+            These are the stories of our customers who have joined us with great
+            pleasure when using this crazy feature.
+          </p>
+        </v-col>
+      </v-row>
+    </section>
+
+    <!-- Section 8th -->
+    <section style="margin-bottom: 5.9894rem">
+      <v-card
+        height="14.5625rem"
+        style="box-shadow: 0px 27px 51px -57px  rgba(13, 16, 37, 0.6);"
+        class="px-16"
+      >
+        <v-row style="height: 100%">
+          <v-col cols="6" class="d-flex justify-center flex-column">
+            <h2
+              style="font-size: 2.1875rem;line-height: 45px; font-weight: 500; color: #0B132A; max-width: 27.9881rem"
+            >
+              Subscribe Now for Get Special Features!
+            </h2>
+            <p
+              class="mt-5"
+              style="font-weight: 400; color: #4F5665;  max-width: 34.6875rem;"
+            >
+              Let's subscribe with us and find the fun.
+            </p>
+          </v-col>
+          <v-col cols="6" class=" d-flex align-center">
+            <v-btn
+              width="15.625rem"
+              height="3.75rem"
+              color="primary"
+              class="text-capitalize d-flex ml-auto"
+              style="
+              font-weight: 700;
+              line-height: 25px;
+              box-shadow: 0px 20px 54px rgba(245, 56, 56, 0.35);
+            "
+            >
+              Subscribe Now
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-card>
+      <!-- <v-card
+        height="12.5rem"
+        style="box-shadow: 0px 27px 51px -57px  rgba(13, 16, 37, 0.6); border: 1px solid"
+      >
+        <v-row style="height: 100%">
+          <v-col cols="6" class="d-flex justify-center flex-column">
+            <h2
+              style="font-size: 2.1875rem;line-height: 45px; font-weight: 500; color: #0B132A; max-width: 27.9881rem"
+            >
+              Subscribe Now for Get Special Features!
+            </h2>
+            <p
+              class="mt-5"
+              style="font-weight: 400; color: #4F5665;  max-width: 34.6875rem; margin-bottom: 9.7381rem"
+            >
+              Let's subscribe with us and find the fun.
+            </p>
+          </v-col>
+
+          <v-col cols="6" class="d-flex justify-center">
+            <v-btn
+              width="15.625rem"
+              height="3.75rem"
+              color="primary"
+              class="text-capitalize py-4 px-19"
+              style="
+              font-weight: 700;
+              line-height: 25px;
+              box-shadow: 0px 20px 54px rgba(245, 56, 56, 0.35);
+            "
+            >
+              Subscribe Now
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-card> -->
     </section>
   </v-container>
 </template>
