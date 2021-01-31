@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "mapbox-gl": "^2.0.1",
+    "nuxt": "^2.14.12",
+    "vue-mapbox": "^0.4.1"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.3"
