@@ -30,6 +30,7 @@ export default {
 
   &:hover {
     background: #f53838;
+    cursor:pointer;
     .icons-carousal {
       color: white !important;
     }
