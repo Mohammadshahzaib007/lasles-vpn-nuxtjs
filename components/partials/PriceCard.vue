@@ -2,6 +2,7 @@
   <v-card
     class="mx-auto pb-12"
     max-width="20.625rem"
+    elevation="0"
     height="47.5rem"
     style="display: flex; flex-direction: column; align-items: center; border: 2px solid #DDDDDD; padding-top: 80px;"
   >
@@ -9,7 +10,7 @@
       <v-img
         :src="require('@/assets/images/cardImage.png')"
         width="9.0563rem"
-        height="10.3356rem"
+        height="10.3356rem" 
       />
     </v-card-title>
     <v-card-text
@@ -19,10 +20,10 @@
         {{ planType }}
       </p>
       <v-list dense class="px-0 py-0 mx-0 my-0">
-        <v-list-item v-for="(item, i) in planList" :key="i"="pl-0">
+        <v-list-item v-for="(item, i) in planList" :key="i" class="pl-0">
           <v-list-item-icon class="mr-5 mt-3" style="font-size: 0.875rem">
             <v-icon color="#2FAB73">$right2</v-icon>
-          </v-list-item-icon>
+          </v-list-item-icon> 
 
           <v-list-item-title
             style="color: #4F5665; font-size: 0.875rem; font-weight: 400; line-height: 30px"
@@ -69,7 +70,7 @@
         rounded
         color="primary"
         outlined
-        class="text-capitalize ml-7 py-3 px-11"
+        class="text-capitalize g-btn-hover ml-7 py-3 px-11"
         style="font-weight: 700; line-height: 19px"
       >
         Select

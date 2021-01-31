@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="white" flat app>
+  <v-app-bar color="white" flat app absolute class="mt-8">
     <v-container>
       <v-row>
         <v-col cols="2">
@@ -14,7 +14,7 @@
             text
             color="#4F5665"
             class="text-capitalize"
-            style="font-weight: 400"
+            style="font-weight: 400; cursor: pointer"
             v-for="navigationName in navigationNames"
             :key="navigationName"
           >

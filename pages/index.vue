@@ -271,11 +271,10 @@
               width="15.625rem"
               height="3.75rem"
               color="primary"
-              class="text-capitalize d-flex ml-auto"
+              class="text-capitalize d-flex ml-auto g-btn-hover"
               style="
               font-weight: 700;
               line-height: 25px;
-              box-shadow: 0px 20px 54px rgba(245, 56, 56, 0.35);
             "
             >
               Subscribe Now
@@ -283,42 +282,6 @@
           </v-col>
         </v-row>
       </v-card>
-      <!-- <v-card
-        height="12.5rem"
-        style="box-shadow: 0px 27px 51px -57px  rgba(13, 16, 37, 0.6); border: 1px solid"
-      >
-        <v-row style="height: 100%">
-          <v-col cols="6" class="d-flex justify-center flex-column">
-            <h2
-              style="font-size: 2.1875rem;line-height: 45px; font-weight: 500; color: #0B132A; max-width: 27.9881rem"
-            >
-              Subscribe Now for Get Special Features!
-            </h2>
-            <p
-              class="mt-5"
-              style="font-weight: 400; color: #4F5665;  max-width: 34.6875rem; margin-bottom: 9.7381rem"
-            >
-              Let's subscribe with us and find the fun.
-            </p>
-          </v-col>
-
-          <v-col cols="6" class="d-flex justify-center">
-            <v-btn
-              width="15.625rem"
-              height="3.75rem"
-              color="primary"
-              class="text-capitalize py-4 px-19"
-              style="
-              font-weight: 700;
-              line-height: 25px;
-              box-shadow: 0px 20px 54px rgba(245, 56, 56, 0.35);
-            "
-            >
-              Subscribe Now
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-card> -->
     </section>
   </v-container>
 </template>
