@@ -459,6 +459,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.testimonial-carousel{
+  ::v-deep .testimonial-card{
+    transition: all .3s;
+    cursor:pointer;
+    &:hover{
+      border: 2px solid #F53838 !important;
+    }
+  }
+}
+
 .testimonial-carousel ::v-deep .slick-slide {
   width: fit-content !important;
   margin-right: 50px;

@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-auto"
+    class="mx-auto testimonial-card"
     max-width="25rem"
     height="14.375rem"
     style="border: 2px solid #DDDDDD;"
@@ -49,5 +49,3 @@ export default {
   props: ["name", "city", "description", "rating", "imgUrl"]
 };
 </script>
-
-<style scoped></style>
