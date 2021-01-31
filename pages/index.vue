@@ -57,7 +57,7 @@
       <v-container>
         <v-card
           height="12.5rem"
-          style="box-shadow: 0px 0px 40px 2px rgba(13,16,37,0.2);"
+          style="box-shadow: 0px 20px 80px -35px rgba(13,16,37,0.2);"
         >
           <v-row style="height: 100%">
             <v-col
@@ -299,7 +299,7 @@
       <v-container>
         <v-card
           height="14.5625rem"
-          style="box-shadow: 0px 20px 80px -35px rgba(13,16,37,0.6); z-index: 4"
+          style="box-shadow: 0px 20px 80px -35px rgba(13,16,37,0.2); z-index: 4"
           class="px-16"
         >
           <v-row style="height: 100%">
