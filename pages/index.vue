@@ -30,11 +30,10 @@
             width="15.625rem"
             height="3.75rem"
             color="primary"
-            class="text-capitalize py-4 px-19"
+            class="text-capitalize py-4 px-19 g-btn-hover"
             style="
               font-weight: 700;
               line-height: 19px;
-              box-shadow: 0px 20px 54px rgba(245, 56, 56, 0.35);
             "
           >
             Get Started
@@ -55,7 +54,7 @@
     <section style="margin-bottom: 5.9894rem">
       <v-card
         height="12.5rem"
-        style="box-shadow: 0px 27px 51px -57px  rgba(13, 16, 37, 0.6);"
+        style="box-shadow: 0px 20px 80px -35px rgba(13,16,37,0.6);"
       >
         <v-row style="height: 100%">
           <v-col
@@ -171,7 +170,7 @@
           </h2>
           <p
             class="mt-5"
-            style="font-weight: 400; color: #4F5665; max-width: 34.6875rem; margin-bottom: 9.7381rem"
+            style="font-weight: 400; color: #4F5665; max-width: 34.6875rem; margin-bottom: 8.3rem"
           >
             See LaslesVPN everywhere to make it easier for you when you move
             locations.
@@ -180,27 +179,7 @@
       </v-row>
       <v-row style="height: 537.77px">
         <v-col cols="12">
-          <MglMap :accessToken="mapAccessToken" :mapStyle="mapStyle">
-            <MglMarker :coordinates="coordinates1">
-              <MapMarker slot="marker" />
-            </MglMarker>
-
-            <MglMarker :coordinates="coordinates2">
-              <MapMarker slot="marker" />
-            </MglMarker>
-
-            <MglMarker :coordinates="coordinates3">
-              <MapMarker slot="marker" />
-            </MglMarker>
-
-            <MglMarker :coordinates="coordinates4">
-              <MapMarker slot="marker" />
-            </MglMarker>
-
-            <MglMarker :coordinates="coordinates5">
-              <MapMarker slot="marker" />
-            </MglMarker>
-          </MglMap>
+          <Map />
         </v-col>
       </v-row>
     </section>
@@ -274,7 +253,7 @@
     <section style="margin-bottom: -5.3rem">
       <v-card
         height="14.5625rem"
-        style="box-shadow: 0px 27px 51px -57px  rgba(13, 16, 37, 0.6); z-index: 4"
+        style="box-shadow: 0px 20px 80px -35px rgba(13,16,37,0.6); z-index: 4"
         class="px-16"
       >
         <v-row style="height: 100%">
@@ -313,27 +292,15 @@
 
 <script>
 import PriceCard from "../components/partials/PriceCard.vue";
-import MapMarker from "../components/partials/MapMarker.vue";
-import Mapbox from "mapbox-gl";
-import { MglMap, MglMarker } from "vue-mapbox";
+import Map from "../components/partials/Map.vue";
 
 export default {
   components: {
     PriceCard,
-    MglMap,
-    MglMarker,
-    MapMarker
+    Map
   },
   data() {
     return {
-      coordinates1: [-331.17187499999994, 12.554563528593656],
-      coordinates2: [-265.078125, 56.9449741808516],
-      coordinates3: [-469.68750000000006, 51.6180165487737],
-      coordinates4: [-236.95312499999997, -27.68352808378776],
-      coordinates5: [-416.953125, -11.867350911459294],
-      mapAccessToken:
-        "pk.eyJ1IjoibW9oZHNoYWh6YWliMDciLCJhIjoiY2tra3NuMjFkMWF3bTJucGdxZ24wbjduYyJ9.GWDj2PIkeapff20Zeou6jw",
-      mapStyle: "mapbox://styles/mohdshahzaib07/ckkktol12356917nsm0eovkqv",
       iconsAndName: [
         {
           icon: "$user",
@@ -393,10 +360,6 @@ export default {
         }
       ]
     };
-  },
-  created() {
-    // We need to set mapbox-gl library here in order to use it in template
-    this.mapbox = Mapbox;
   }
 };
 </script>

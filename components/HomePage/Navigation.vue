@@ -34,7 +34,7 @@
             rounded
             color="primary"
             outlined
-            class="text-capitalize ml-7 py-3 px-11"
+            class="text-capitalize ml-7 py-3 px-11 btn-nav"
             style="font-weight: 500; line-height: 19px"
           >
             Sign Up
@@ -54,3 +54,13 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.btn-nav {
+  &:hover {
+    color: #fff !important;
+    background: #f53838;
+    box-shadow: 0px 20px 40px rgba(245, 56, 56, 0.35) !important;
+  }
+}
+</style>
