@@ -12,7 +12,8 @@
     "core-js": "^3.8.3",
     "mapbox-gl": "^2.0.1",
     "nuxt": "^2.14.12",
-    "vue-mapbox": "^0.4.1"
+    "vue-mapbox": "^0.4.1",
+    "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.3"

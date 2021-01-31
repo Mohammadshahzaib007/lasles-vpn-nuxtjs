@@ -6,6 +6,9 @@ import RightIcon from "~/components/icons/RightIcon.vue";
 import RightIcon2 from "~/components/icons/RightIcon-2.vue";
 import Logo from "~/components/icons/Logo.vue";
 import Facebook from "~/components/icons/Facebook.vue";
+import StarIcon from "~/components/icons/StarIcon.vue";
+import LeftArrow from "~/components/icons/LeftArrow.vue";
+import RightArrow from "~/components/icons/RightArrow.vue";
 
 export default {
   theme: {
@@ -43,6 +46,15 @@ export default {
       },
       fb: {
         component: Facebook
+      },
+      star: {
+        component: StarIcon
+      },
+      leftArrow: {
+        component: LeftArrow
+      },
+      rightArrow: {
+        component: RightIcon
       }
     }
   }
