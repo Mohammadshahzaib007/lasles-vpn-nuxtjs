@@ -1,6 +1,7 @@
 <template>
   <v-card
     class="mx-auto pb-12"
+    id="price-card"
     max-width="20.625rem"
     elevation="0"
     height="47.5rem"
@@ -70,8 +71,8 @@
         rounded
         color="primary"
         outlined
-        class="text-capitalize g-btn-hover ml-7 py-3 px-11"
-        style="font-weight: 700; line-height: 19px"
+        class="text-capitalize price-card-btn ml-7 py-3 px-11"
+        style="font-weight: 700; line-height: 19px; box-shadow:none"
       >
         Select
       </v-btn>
@@ -81,6 +82,26 @@
 
 <script>
 export default {
-  props: ["planList", "planType", "price"]
+  props: ["planList", "planType", "price"],
 };
 </script>
+
+
+<style lang="scss" scoped>
+#price-card{
+  transition: all .3s; 
+  cursor:pointer;
+  &:hover{
+    border: 2px solid #F53838 !important;
+
+    .price-card-btn{
+      background: #F53838;
+      box-shadow: 0px 20px 40px rgba(245, 56, 56, 0.35) !important;
+
+      & ::v-deep .v-btn__content{
+        color: #fff;
+      }
+    }
+  }
+}
+</style>
