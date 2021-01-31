@@ -11,11 +11,14 @@ h2 {
   line-height: 50px;
 }
 
-
 .g-btn-hover{
   transition: all .3s;
   box-shadow: 0px 10px 20px rgba(245, 56, 56, 0.30);
   &:hover{
-    box-shadow: 0px 20px 40px rgba(245, 56, 56, 0.35)
+    box-shadow: 0px 20px 40px rgba(245, 56, 56, 0.35) !important;
   }
+}
+
+#app .container {
+  max-width: 1185px !important;
 }
